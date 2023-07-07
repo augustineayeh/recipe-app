@@ -1,0 +1,26 @@
+{
+    "sourceFile": "lib/src/widgets/orange_button.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1688555355536,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1688555443547,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,11 +1,13 @@\n // ignore_for_file: public_member_api_docs, sort_constructors_first\n+import 'dart:ffi';\n+\n import 'package:cook_that_thing/src/utils/app_colors.dart';\n import 'package:flutter/material.dart';\n \n class OrangeButton extends StatelessWidget {\n   final String text;\n-  var onPressed;\n+  final dynamic onPressed;\n   OrangeButton({\n     Key? key,\n     required this.text,\n     required this.onPressed,\n"
+                },
+                {
+                    "date": 1688555942122,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,13 +3,13 @@\n import 'package:flutter/material.dart';\n \n class OrangeButton extends StatelessWidget {\n   final String text;\n-  final dynamic onPressed;\n+  final dynamic route;\n   const OrangeButton({\n     Key? key,\n     required this.text,\n-    required this.onPressed,\n+    required this.route,\n   }) : super(key: key);\n \n   @override\n   Widget build(BuildContext context) {\n@@ -19,9 +19,9 @@\n             backgroundColor: AppColors.orange,\n             shape: RoundedRectangleBorder(\n                 borderRadius: BorderRadius.circular(20))),\n         onPressed: () {\n-          onPressed;\n+          Navigator.push(context, MaterialPageRoute(builder: (context) => route));\n         },\n         child: Text(\n           text,\n           style: const TextStyle(\n"
+                }
+            ],
+            "date": 1688555355536,
+            "name": "Commit-0",
+            "content": "// ignore_for_file: public_member_api_docs, sort_constructors_first\nimport 'package:cook_that_thing/src/utils/app_colors.dart';\nimport 'package:flutter/material.dart';\n\nclass OrangeButton extends StatelessWidget {\n  final String text;\n  var onPressed;\n   OrangeButton({\n    Key? key,\n    required this.text,\n    required this.onPressed,\n  }) : super(key: key);\n\n  @override\n  Widget build(BuildContext context) {\n    return ElevatedButton(\n        style: ElevatedButton.styleFrom(\n            padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 140),\n            backgroundColor: AppColors.orange,\n            shape: RoundedRectangleBorder(\n                borderRadius: BorderRadius.circular(20))),\n        onPressed: () {\n          onPressed;\n        },\n        child: Text(\n          text,\n          style: const TextStyle(\n            color: Colors.white,\n            fontSize: 24,\n          ),\n        ));\n  }\n}\n"
+        }
+    ]
+}

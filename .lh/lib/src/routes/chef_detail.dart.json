@@ -1,0 +1,90 @@
+{
+    "sourceFile": "lib/src/routes/chef_detail.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 18,
+            "patches": [
+                {
+                    "date": 1688656359360,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1688657542508,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,13 +4,18 @@\n   const ChefDetailsScreen({super.key});\n \n   @override\n   Widget build(BuildContext context) {\n-    return const Scaffold(\n+    return Scaffold(\n       body: SafeArea(\n           child: SingleChildScrollView(\n         child: Column(\n-          children: [],\n+          children: [\n+            Container(\n+              decoration: const BoxDecoration(\n+                  image: DecorationImage(image: AssetImage())),\n+            )\n+          ],\n         ),\n       )),\n     );\n   }\n"
+                },
+                {
+                    "date": 1688657613406,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,16 @@\n+// ignore_for_file: public_member_api_docs, sort_constructors_first\n+import 'package:cook_that_thing/src/models/models.dart';\n import 'package:flutter/material.dart';\n \n class ChefDetailsScreen extends StatelessWidget {\n-  const ChefDetailsScreen({super.key});\n+  final Chef chef;\n+  final int index;\n+  const ChefDetailsScreen({\n+    Key? key,\n+    required this.chef,\n+    required this.index,\n+  }) : super(key: key);\n \n   @override\n   Widget build(BuildContext context) {\n     return Scaffold(\n@@ -11,9 +19,9 @@\n         child: Column(\n           children: [\n             Container(\n               decoration: const BoxDecoration(\n-                  image: DecorationImage(image: AssetImage())),\n+                  image: DecorationImage(image: AssetImage(chef.imageUrl))),\n             )\n           ],\n         ),\n       )),\n"
+                },
+                {
+                    "date": 1688657633119,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,10 +18,11 @@\n           child: SingleChildScrollView(\n         child: Column(\n           children: [\n             Container(\n-              decoration: const BoxDecoration(\n-                  image: DecorationImage(image: AssetImage(chef.imageUrl))),\n+              decoration: BoxDecoration(\n+                  image: DecorationImage(\n+                      fit: BoxFit.cover, image: AssetImage(chef.imageUrl))),\n             )\n           ],\n         ),\n       )),\n"
+                },
+                {
+                    "date": 1688657786540,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,8 +18,9 @@\n           child: SingleChildScrollView(\n         child: Column(\n           children: [\n             Container(\n+              height: 400,\n               decoration: BoxDecoration(\n                   image: DecorationImage(\n                       fit: BoxFit.cover, image: AssetImage(chef.imageUrl))),\n             )\n"
+                },
+                {
+                    "date": 1688657813059,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n             Container(\n               height: 400,\n               decoration: BoxDecoration(\n                   image: DecorationImage(\n-                      fit: BoxFit.cover, image: AssetImage(chef.imageUrl))),\n+                      fit: BoxFit.fill, image: AssetImage(chef.imageUrl))),\n             )\n           ],\n         ),\n       )),\n"
+                },
+                {
+                    "date": 1688657829122,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n             Container(\n               height: 400,\n               decoration: BoxDecoration(\n                   image: DecorationImage(\n-                      fit: BoxFit.fill, image: AssetImage(chef.imageUrl))),\n+                      fit: BoxFit.cover, image: AssetImage(chef.imageUrl))),\n             )\n           ],\n         ),\n       )),\n"
+                },
+                {
+                    "date": 1688657835362,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n             Container(\n               height: 400,\n               decoration: BoxDecoration(\n                   image: DecorationImage(\n-                      fit: BoxFit.cover, image: AssetImage(chef.imageUrl))),\n+                      fit: BoxFit.fill, image: AssetImage(chef.imageUrl))),\n             )\n           ],\n         ),\n       )),\n"
+                },
+                {
+                    "date": 1688657887426,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n             Container(\n               height: 400,\n               decoration: BoxDecoration(\n                   image: DecorationImage(\n-                      fit: BoxFit.fill, image: AssetImage(chef.imageUrl))),\n+                      fit: BoxFit.cover, image: AssetImage(chef.imageUrl))),\n             )\n           ],\n         ),\n       )),\n"
+                },
+                {
+                    "date": 1688657907881,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n             Container(\n               height: 400,\n               decoration: BoxDecoration(\n                   image: DecorationImage(\n-                      fit: BoxFit.cover, image: AssetImage(chef.imageUrl))),\n+                      fit: BoxFit.fill, image: AssetImage(chef.imageUrl))),\n             )\n           ],\n         ),\n       )),\n"
+                },
+                {
+                    "date": 1688657924196,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n             Container(\n               height: 400,\n               decoration: BoxDecoration(\n                   image: DecorationImage(\n-                      fit: BoxFit.fill, image: AssetImage(chef.imageUrl))),\n+                      fit: BoxFit.cover, image: AssetImage(chef.imageUrl))),\n             )\n           ],\n         ),\n       )),\n"
+                },
+                {
+                    "date": 1688658362647,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,14 +17,16 @@\n       body: SafeArea(\n           child: SingleChildScrollView(\n         child: Column(\n           children: [\n-            Container(\n-              height: 400,\n-              decoration: BoxDecoration(\n-                  image: DecorationImage(\n-                      fit: BoxFit.cover, image: AssetImage(chef.imageUrl))),\n-            )\n+            Stack(children: [\n+              Container(\n+                height: 400,\n+                decoration: BoxDecoration(\n+                    image: DecorationImage(\n+                        fit: BoxFit.cover, image: AssetImage(chef.imageUrl))),\n+              ),\n+            ])\n           ],\n         ),\n       )),\n     );\n"
+                },
+                {
+                    "date": 1688658590855,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,8 +12,9 @@\n   }) : super(key: key);\n \n   @override\n   Widget build(BuildContext context) {\n+    final screenWidth = MediaQuery.of(context).size.width;\n     return Scaffold(\n       body: SafeArea(\n           child: SingleChildScrollView(\n         child: Column(\n@@ -24,8 +25,62 @@\n                 decoration: BoxDecoration(\n                     image: DecorationImage(\n                         fit: BoxFit.cover, image: AssetImage(chef.imageUrl))),\n               ),\n+              Positioned(\n+                  left: (screenWidth - 300) / 2,\n+                  bottom: -55,\n+                  child: SizedBox(\n+                    width: 300,\n+                    height: 110,\n+                    child: Material(\n+                      borderRadius: BorderRadius.circular(20),\n+                      elevation: 5,\n+                      child: Column(\n+                        mainAxisAlignment: MainAxisAlignment.center,\n+                        children: [\n+                          Text(\n+                            chef.name,\n+                            style: const TextStyle(\n+                                fontSize: 24, fontWeight: FontWeight.bold),\n+                          ),\n+                          const Divider(),\n+                          Row(\n+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,\n+                            children: [\n+                              const Row(\n+                                children: [\n+                                  Icon(\n+                                    Icons.equalizer,\n+                                    size: 15,\n+                                  ),\n+                                  SizedBox(\n+                                    width: 2,\n+                                  ),\n+                                  Text('Easy', style: TextStyle(fontSize: 20)),\n+                                ],\n+                              ),\n+                              Row(\n+                                children: [\n+                                  const Icon(\n+                                    Icons.timer_outlined,\n+                                    size: 15,\n+                                  ),\n+                                  const SizedBox(\n+                                    width: 2,\n+                                  ),\n+                                  Text(\n+                                    chef.duration,\n+                                    style: const TextStyle(fontSize: 20),\n+                                  ),\n+                                ],\n+                              ),\n+                            ],\n+                          ),\n+                        ],\n+                      ),\n+                    ),\n+                  ))\n             ])\n           ],\n         ),\n       )),\n"
+                },
+                {
+                    "date": 1688658651416,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -55,9 +55,10 @@\n                                   ),\n                                   SizedBox(\n                                     width: 2,\n                                   ),\n-                                  Text('Easy', style: TextStyle(fontSize: 20)),\n+                                  Text('World class',\n+                                      style: TextStyle(fontSize: 20)),\n                                 ],\n                               ),\n                               Row(\n                                 children: [\n@@ -68,9 +69,9 @@\n                                   const SizedBox(\n                                     width: 2,\n                                   ),\n                                   Text(\n-                                    chef.duration,\n+                                    chef.name,\n                                     style: const TextStyle(fontSize: 20),\n                                   ),\n                                 ],\n                               ),\n"
+                },
+                {
+                    "date": 1688658687349,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n       body: SafeArea(\n           child: SingleChildScrollView(\n         child: Column(\n           children: [\n-            Stack(children: [\n+            Stack(clipBehavior: Clip.none, children: [\n               Container(\n                 height: 400,\n                 decoration: BoxDecoration(\n                     image: DecorationImage(\n"
+                },
+                {
+                    "date": 1688659371322,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -62,9 +62,9 @@\n                               ),\n                               Row(\n                                 children: [\n                                   const Icon(\n-                                    Icons.timer_outlined,\n+                                    Icons.star,\n                                     size: 15,\n                                   ),\n                                   const SizedBox(\n                                     width: 2,\n"
+                },
+                {
+                    "date": 1688659673348,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -69,9 +69,9 @@\n                                   const SizedBox(\n                                     width: 2,\n                                   ),\n                                   Text(\n-                                    chef.name,\n+                                    ${chef.rating},\n                                     style: const TextStyle(fontSize: 20),\n                                   ),\n                                 ],\n                               ),\n"
+                },
+                {
+                    "date": 1688659722301,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -69,9 +69,9 @@\n                                   const SizedBox(\n                                     width: 2,\n                                   ),\n                                   Text(\n-                                    ${chef.rating},\n+                                    '${chef.rating}',\n                                     style: const TextStyle(fontSize: 20),\n                                   ),\n                                 ],\n                               ),\n"
+                },
+                {
+                    "date": 1688663706440,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,5 @@\n-// ignore_for_file: public_member_api_docs, sort_constructors_first\n-import 'package:cook_that_thing/src/models/models.dart';\n+import 'package:cook_that_thing/src/models/models.dart';\n import 'package:flutter/material.dart';\n \n class ChefDetailsScreen extends StatelessWidget {\n   final Chef chef;\n"
+                }
+            ],
+            "date": 1688656359360,
+            "name": "Commit-0",
+            "content": "import 'package:flutter/material.dart';\n\nclass ChefDetailsScreen extends StatelessWidget {\n  const ChefDetailsScreen({super.key});\n\n  @override\n  Widget build(BuildContext context) {\n    return const Scaffold(\n      body: SafeArea(\n          child: SingleChildScrollView(\n        child: Column(\n          children: [],\n        ),\n      )),\n    );\n  }\n}\n"
+        }
+    ]
+}

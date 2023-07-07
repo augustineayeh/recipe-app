@@ -1,0 +1,26 @@
+{
+    "sourceFile": "lib/src/widgets/meal.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1688565188221,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1688565303533,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,6 @@\n import 'package:flutter/cupertino.dart';\n+import 'package:flutter/material.dart';\n \n class MealWidget extends StatefulWidget {\n   const MealWidget({super.key});\n \n@@ -9,11 +10,13 @@\n \n class _MealWidgetState extends State<MealWidget> {\n   @override\n   Widget build(BuildContext context) {\n-    return Container(\n-      child: const Column(\n-        children: [],\n+    return Material(elevation: 5, color: Colors.white, borderRadius: BorderRadius.circular(10),\n+      child: Container(decoration: BoxDecoration(),\n+        child: const Column(\n+          children: [],\n+        ),\n       ),\n     );\n   }\n }\n"
+                },
+                {
+                    "date": 1688565365330,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,11 +14,13 @@\n       elevation: 5,\n       color: Colors.white,\n       borderRadius: BorderRadius.circular(10),\n       child: Container(\n-        decoration: const BoxDecoration(),\n-        child: const Column(\n-          children: [],\n+     \n+        child: Column(\n+          children: [\n+            Container(decoration: BoxDecoration(),)\n+          ],\n         ),\n       ),\n     );\n   }\n"
+                }
+            ],
+            "date": 1688565188221,
+            "name": "Commit-0",
+            "content": "import 'package:flutter/cupertino.dart';\nimport 'package:flutter/foundation.dart';\n\nclass MealWidget extends StatefulWidget {\n  const MealWidget({super.key});\n\n  @override\n  State<MealWidget> createState() => _MealWidgetState();\n}\n\nclass _MealWidgetState extends State<MealWidget> {\n  @override\n  Widget build(BuildContext context) {\n    return  Container(child: Column(children: [],),);\n  }\n}"
+        }
+    ]
+}

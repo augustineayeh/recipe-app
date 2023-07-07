@@ -1,0 +1,9 @@
+export 'package:cook_that_thing/src/routes/chef_detail.dart';
+export 'package:cook_that_thing/src/routes/home_page.dart';
+export 'package:cook_that_thing/src/routes/intro.dart';
+export 'package:cook_that_thing/src/routes/login.dart';
+export 'package:cook_that_thing/src/routes/meal_detail.dart';
+export 'package:cook_that_thing/src/routes/select_chefs.dart';
+export 'package:cook_that_thing/src/routes/select_ingredients.dart';
+export 'package:cook_that_thing/src/routes/select_recipes.dart';
+export 'package:cook_that_thing/src/routes/sign_up.dart';

@@ -1,0 +1,26 @@
+{
+    "sourceFile": "lib/src/routes/select_ingredients.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1688401461591,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1688555357799,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -62,9 +62,9 @@\n             height: 350,\n           ),\n           OrangeButton(\n             text: 'Next',\n-            callback: Navigator.push(\n+            onPressed: Navigator.push(\n                 context,\n                 MaterialPageRoute(\n                     builder: (context) => const SelectChefsScreen())),\n           )\n"
+                },
+                {
+                    "date": 1688555937593,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -62,12 +62,9 @@\n             height: 350,\n           ),\n           OrangeButton(\n             text: 'Next',\n-            onPressed: Navigator.push(\n-                context,\n-                MaterialPageRoute(\n-                    builder: (context) => const SelectChefsScreen())),\n+            route:  SelectChefsScreen(),\n           )\n         ]),\n       ),\n     );\n"
+                }
+            ],
+            "date": 1688401461591,
+            "name": "Commit-0",
+            "content": "import 'package:flutter/material.dart';\n\nclass SelectIngredientScreen extends StatefulWidget {\n  const SelectIngredientScreen({super.key});\n\n  @override\n  State<SelectIngredientScreen> createState() => _SelectIngredientScreenState();\n}\n\nclass _SelectIngredientScreenState extends State<SelectIngredientScreen> {\n  @override\n  Widget build(BuildContext context) {\n    return const Placeholder();\n  }\n}"
+        }
+    ]
+}

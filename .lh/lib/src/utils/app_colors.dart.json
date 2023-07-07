@@ -1,0 +1,30 @@
+{
+    "sourceFile": "lib/src/utils/app_colors.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 3,
+            "patches": [
+                {
+                    "date": 1688385435597,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1688385656407,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,8 @@\n-class AppColors{\n+import 'package:flutter/material.dart';\n+class AppColors {\n+   AppColors._(); \n\\ No newline at end of file\n \n-List<Color >\n-}\n+  \n+    static const Color orange = Color(0xffFC6012);\n+  \n+}\n"
+                },
+                {
+                    "date": 1688397462830,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,5 +3,7 @@\n class AppColors {\n   AppColors._();\n \n   static const Color orange = Color(0xffFC6012);\n+  static const Color lightOrange = Color(0xffFE9058);\n+ \n }\n"
+                },
+                {
+                    "date": 1688402009494,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,5 +4,7 @@\n   AppColors._();\n \n   static const Color orange = Color(0xffFC6012);\n   static const Color lightOrange = Color(0xffFE9058);\n+  static const Color deepGrey = Color(0xff4D4D4D);\n+  \n }\n"
+                }
+            ],
+            "date": 1688385435597,
+            "name": "Commit-0",
+            "content": "class AppColors{\n\nList<Color >\n}"
+        }
+    ]
+}

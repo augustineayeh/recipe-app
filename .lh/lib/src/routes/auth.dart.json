@@ -1,0 +1,26 @@
+{
+    "sourceFile": "lib/src/routes/auth.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1688395314588,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1688395508225,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,24 +1,24 @@\n-import 'package:cook_that_thing/src/routes/home_page.dart';\n-import 'package:cook_that_thing/src/routes/login.dart';\n-import 'package:firebase_auth/firebase_auth.dart';\n-import 'package:flutter/material.dart';\n+// import 'package:cook_that_thing/src/routes/home_page.dart';\n+// import 'package:cook_that_thing/src/routes/login.dart';\n+// import 'package:firebase_auth/firebase_auth.dart';\n+// import 'package:flutter/material.dart';\n \n-class Auth extends StatelessWidget {\n-  const Auth({super.key});\n+// class Auth extends StatelessWidget {\n+//   const Auth({super.key});\n \n-  @override\n-  Widget build(BuildContext context) {\n-    return Scaffold(\n-      body: StreamBuilder<User?>(\n-        stream: FirebaseAuth.instance.authStateChanges(),\n-        builder: (context, snapshot) {\n-          if (snapshot.hasData) {\n-            return const HomePage();\n-          } else {\n-            return const LogInScreen();\n-          }\n-        },\n-      ),\n-    );\n-  }\n-}\n+//   @override\n+//   Widget build(BuildContext context) {\n+//     return Scaffold(\n+//       body: StreamBuilder<User?>(\n+//         stream: FirebaseAuth.instance.authStateChanges(),\n+//         builder: (context, snapshot) {\n+//           if (snapshot.hasData) {\n+//             return const HomePage();\n+//           } else {\n+//             return const LogInScreen();\n+//           }\n+//         },\n+//       ),\n+//     );\n+//   }\n+// }\n"
+                },
+                {
+                    "date": 1688396046210,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,24 +1,24 @@\n-// import 'package:cook_that_thing/src/routes/home_page.dart';\n-// import 'package:cook_that_thing/src/routes/login.dart';\n-// import 'package:firebase_auth/firebase_auth.dart';\n-// import 'package:flutter/material.dart';\n+import 'package:cook_that_thing/src/routes/home_page.dart';\n+import 'package:cook_that_thing/src/routes/login.dart';\n+import 'package:firebase_auth/firebase_auth.dart';\n+import 'package:flutter/material.dart';\n \n-// class Auth extends StatelessWidget {\n-//   const Auth({super.key});\n+class Auth extends StatelessWidget {\n+  const Auth({super.key});\n \n-//   @override\n-//   Widget build(BuildContext context) {\n-//     return Scaffold(\n-//       body: StreamBuilder<User?>(\n-//         stream: FirebaseAuth.instance.authStateChanges(),\n-//         builder: (context, snapshot) {\n-//           if (snapshot.hasData) {\n-//             return const HomePage();\n-//           } else {\n-//             return const LogInScreen();\n-//           }\n-//         },\n-//       ),\n-//     );\n-//   }\n-// }\n+  @override\n+  Widget build(BuildContext context) {\n+    return Scaffold(\n+      body: StreamBuilder<User?>(\n+        stream: FirebaseAuth.instance.authStateChanges(),\n+        builder: (context, snapshot) {\n+          if (snapshot.hasData) {\n+            return const HomePage();\n+          } else {\n+            return const LogInScreen();\n+          }\n+        },\n+      ),\n+    );\n+  }\n+}\n"
+                }
+            ],
+            "date": 1688395314588,
+            "name": "Commit-0",
+            "content": "import 'package:cook_that_thing/src/routes/home_page.dart';\nimport 'package:cook_that_thing/src/routes/login.dart';\nimport 'package:firebase_auth/firebase_auth.dart';\nimport 'package:flutter/material.dart';\n\n\nclass Auth extends StatelessWidget {\n  const Auth({super.key});\n\n  @override\n  Widget build(BuildContext context) {\n    return Scaffold(\n      body: StreamBuilder<User?>(\n        stream: FirebaseAuth.instance.authStateChanges(),\n        builder: (context, snapshot) {\n          if (snapshot.hasData) {\n            return const HomePage();\n          } else {\n            return const LogInScreen();\n          }\n        },\n      ),\n    );\n  }\n}\n"
+        }
+    ]
+}

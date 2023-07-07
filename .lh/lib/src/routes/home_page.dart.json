@@ -1,0 +1,30 @@
+{
+    "sourceFile": "lib/src/routes/home_page.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 3,
+            "patches": [
+                {
+                    "date": 1688385780475,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1688563276742,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,7 +9,9 @@\n \n class _HomePageState extends State<HomePage> {\n   @override\n   Widget build(BuildContext context) {\n-    return const Placeholder();\n+    return const Scaffold(\n+      appBar: AppBar(),\n+    );\n   }\n }\n"
+                },
+                {
+                    "date": 1688563323007,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,8 +10,8 @@\n class _HomePageState extends State<HomePage> {\n   @override\n   Widget build(BuildContext context) {\n     return Scaffold(\n-      appBar: AppBar(),\n+      appBar: AppBar(actions: [],),\n     );\n   }\n }\n"
+                },
+                {
+                    "date": 1688563374989,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n   @override\n   Widget build(BuildContext context) {\n     return Scaffold(\n       appBar: AppBar(\n-        actions: const [],\n+        actions: const [IconButton(onPressed: (){}, icon: Icon(Icons.notifications))],\n       ),\n     );\n   }\n }\n"
+                }
+            ],
+            "date": 1688385780475,
+            "name": "Commit-0",
+            "content": "import 'package:flutter/material.dart';\n\nclass HomePage extends StatefulWidget {\n  const HomePage({super.key});\n\n  @override\n  State<HomePage> createState() => _HomePageState();\n}\n\nclass _HomePageState extends State<HomePage> {\n  @override\n  Widget build(BuildContext context) {\n    return const Placeholder();\n  }\n}"
+        }
+    ]
+}

@@ -1,0 +1,46 @@
+{
+    "sourceFile": "lib/src/routes/select_recipes.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 7,
+            "patches": [
+                {
+                    "date": 1688400037574,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1688401386505,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,7 +9,7 @@\n \n class _SelectRecipeScreenState extends State<SelectRecipeScreen> {\n   @override\n   Widget build(BuildContext context) {\n-    return const Placeholder();\n+    return const Scaffold();\n   }\n }\n"
+                },
+                {
+                    "date": 1688401431435,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,7 +9,7 @@\n \n class _SelectRecipeScreenState extends State<SelectRecipeScreen> {\n   @override\n   Widget build(BuildContext context) {\n-    return const Scaffold();\n+    return  Scaffold(appBar:AppBar(actions: []),);\n   }\n }\n"
+                },
+                {
+                    "date": 1688401587932,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,7 +9,9 @@\n \n class _SelectRecipeScreenState extends State<SelectRecipeScreen> {\n   @override\n   Widget build(BuildContext context) {\n-    return  Scaffold(appBar:AppBar(actions: []),);\n+    return Scaffold(\n+      appBar: AppBar(actions: const []),\n\\ No newline at end of file\n+    );\n   }\n-}\n+}\n"
+                },
+                {
+                    "date": 1688401615866,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,8 +10,8 @@\n class _SelectRecipeScreenState extends State<SelectRecipeScreen> {\n   @override\n   Widget build(BuildContext context) {\n     return Scaffold(\n-      appBar: AppBar(actions: const []),\n+      appBar: AppBar(actions: const [Text('skip')]),\n     );\n   }\n }\n"
+                },
+                {
+                    "date": 1688401651100,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,8 +10,9 @@\n class _SelectRecipeScreenState extends State<SelectRecipeScreen> {\n   @override\n   Widget build(BuildContext context) {\n     return Scaffold(\n-      appBar: AppBar(actions: const [Text('skip')]),\n+      appBar: AppBar(actions:  [Container\n+      (child: Text('skip'))]),\n     );\n   }\n }\n"
+                },
+                {
+                    "date": 1688401667129,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,8 +10,9 @@\n class _SelectRecipeScreenState extends State<SelectRecipeScreen> {\n   @override\n   Widget build(BuildContext context) {\n     return Scaffold(\n-      appBar: AppBar(actions: [Container(child: const Text('skip'))]),\n+      appBar: AppBar(actions: [Container(decoration: BoxDecoration(),\n+        child: const Text('skip'))]),\n     );\n   }\n }\n"
+                },
+                {
+                    "date": 1688401686131,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n   @override\n   Widget build(BuildContext context) {\n     return Scaffold(\n       appBar: AppBar(actions: [\n-        Container(decoration: const BoxDecoration(), child: const Text('skip'))\n+        Container(decoration: const BoxDecoration(color: Colors.grey), child: const Text('skip'))\n       ]),\n     );\n   }\n }\n"
+                }
+            ],
+            "date": 1688400037574,
+            "name": "Commit-0",
+            "content": "import 'package:flutter/material.dart';\n\nclass SelectRecipeScreen extends StatefulWidget {\n  const SelectRecipeScreen({super.key});\n\n  @override\n  State<SelectRecipeScreen> createState() => _SelectRecipeScreenState();\n}\n\nclass _SelectRecipeScreenState extends State<SelectRecipeScreen> {\n  @override\n  Widget build(BuildContext context) {\n    return const Placeholder();\n  }\n}"
+        }
+    ]
+}

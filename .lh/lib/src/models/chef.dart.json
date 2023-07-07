@@ -1,0 +1,26 @@
+{
+    "sourceFile": "lib/src/models/chef.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1688388835907,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1688388957337,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,21 +6,21 @@\n   Chef(this.name, this.profilePicUrl, this.numberOfRecipes);\n }\n \n List<Chef> chefs = [\n-  Chef('Eva Williams', profilePicUrl, 15),\n+ \n   Chef('James Brown', 'assets/images/chef1.avif', 12),\n   Chef('Mike Dean', 'assets/images/chef2.avif', 10),\n-  Chef('Eva Williams', 'assets/images/chef3.jpeg', 15),\n-  Chef('Eva Williams', 'assets/images/chef4.jpeg', 15),\n-  Chef('Eva Williams', 'assets/images/chef5.jpeg', 15),\n-  Chef('Eva Williams', profilePicUrl, 15),\n-  Chef('Eva Williams', profilePicUrl, 15),\n-  Chef('Eva Williams', profilePicUrl, 15),\n-  Chef('Eva Williams', profilePicUrl, 15),\n-  Chef('Eva Williams', profilePicUrl, 15),\n-  Chef('Eva Williams', profilePicUrl, 15),\n-  Chef('Eva Williams', profilePicUrl, 15),\n-  Chef('Eva Williams', profilePicUrl, 15),\n-  Chef('Eva Williams', profilePicUrl, 15),\n-  Chef('Eva Williams', profilePicUrl, 15),\n+  Chef('Eva Williams', 'assets/images/chef3.jpeg', 13),\n+  Chef('Eva Williams', 'assets/images/chef4.jpeg', 12),\n+  Chef('Eva Williams', 'assets/images/chef5.jpeg', 16),\n+  Chef('Eva Williams', 'assets/images/chef6.jpeg', 15),\n+  Chef('Eva Williams', 'assets/images/chef7.jpeg', 13),\n+  Chef('Eva Williams', 'assets/images/chef8.jpeg', 11),\n+  Chef('Eva Williams', 'assets/images/chef9.jpeg', 10),\n+  Chef('Eva Williams', 'assets/images/chef10.jpeg', 13),\n+  Chef('Eva Williams', 'assets/images/chef11.jpeg', 12),\n+  Chef('Eva Williams', 'assets/images/chef12.jpeg', 10),\n+  Chef('Eva Williams', 'assets/images/chef13.jpeg', 14),\n+  Chef('Eva Williams', 'assets/images/chef14.jpeg', 17),\n+  Chef('Eva Williams', 'assets/images/chef15.jpeg', 12),\n ];\n"
+                },
+                {
+                    "date": 1688394601596,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n   Chef(this.name, this.profilePicUrl, this.numberOfRecipes);\n }\n \n List<Chef> chefs = [\n-  Chef('James Brown', 'assets/images/chef1.avif', 12),\n+  Chef('James Brown','assets/images/chef1.avif', 12),\n   Chef('Mike Dean', 'assets/images/chef2.avif', 10),\n   Chef('Eva Williams', 'assets/images/chef3.jpeg', 13),\n   Chef('Eva Williams', 'assets/images/chef4.jpeg', 12),\n   Chef('Eva Williams', 'assets/images/chef5.jpeg', 16),\n"
+                }
+            ],
+            "date": 1688388835907,
+            "name": "Commit-0",
+            "content": "class Chef {\n  final String name;\n  final String profilePicUrl;\n  final int numberOfRecipes;\n\n  Chef(this.name, this.profilePicUrl, this.numberOfRecipes);\n}\n\nList<Chef> chefs = [\n  Chef('Eva Williams', profilePicUrl, 15),\n  Chef('James Brown', 'assets/images/chef1.avif', 12),\n  Chef('Mike Dean', 'assets/images/chef2.avif', 10),\n  Chef('Eva Williams', 'assets/images/chef3.jpeg', 15),\n  Chef('Eva Williams', 'assets/images/chef4.jpeg', 15),\n  Chef('Eva Williams', 'assets/images/chef5.jpeg', 15),\n  Chef('Eva Williams', profilePicUrl, 15),\n  Chef('Eva Williams', profilePicUrl, 15),\n  Chef('Eva Williams', profilePicUrl, 15),\n  Chef('Eva Williams', profilePicUrl, 15),\n  Chef('Eva Williams', profilePicUrl, 15),\n  Chef('Eva Williams', profilePicUrl, 15),\n  Chef('Eva Williams', profilePicUrl, 15),\n  Chef('Eva Williams', profilePicUrl, 15),\n  Chef('Eva Williams', profilePicUrl, 15),\n  Chef('Eva Williams', profilePicUrl, 15),\n\n];\n"
+        }
+    ]
+}

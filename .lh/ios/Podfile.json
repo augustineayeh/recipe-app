@@ -1,0 +1,18 @@
+{
+    "sourceFile": "ios/Podfile",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1688395353491,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1688395353491,
+            "name": "Commit-0",
+            "content": "# Uncomment this line to define a global platform for your project\nplatform :ios, '11.0'\n\n# CocoaPods analytics sends network stats synchronously affecting flutter build latency.\nENV['COCOAPODS_DISABLE_STATS'] = 'true'\n\nproject 'Runner', {\n  'Debug' => :debug,\n  'Profile' => :release,\n  'Release' => :release,\n}\n\ndef flutter_root\n  generated_xcode_build_settings_path = File.expand_path(File.join('..', 'Flutter', 'Generated.xcconfig'), __FILE__)\n  unless File.exist?(generated_xcode_build_settings_path)\n    raise \"#{generated_xcode_build_settings_path} must exist. If you're running pod install manually, make sure flutter pub get is executed first\"\n  end\n\n  File.foreach(generated_xcode_build_settings_path) do |line|\n    matches = line.match(/FLUTTER_ROOT\\=(.*)/)\n    return matches[1].strip if matches\n  end\n  raise \"FLUTTER_ROOT not found in #{generated_xcode_build_settings_path}. Try deleting Generated.xcconfig, then run flutter pub get\"\nend\n\nrequire File.expand_path(File.join('packages', 'flutter_tools', 'bin', 'podhelper'), flutter_root)\n\nflutter_ios_podfile_setup\n\ntarget 'Runner' do\n  use_frameworks!\n  use_modular_headers!\n\n  flutter_install_all_ios_pods File.dirname(File.realpath(__FILE__))\n  target 'RunnerTests' do\n    inherit! :search_paths\n  end\nend\n\npost_install do |installer|\n  installer.pods_project.targets.each do |target|\n    flutter_additional_ios_build_settings(target)\n  end\nend\n"
+        }
+    ]
+}

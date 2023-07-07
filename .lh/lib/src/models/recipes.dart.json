@@ -1,0 +1,30 @@
+{
+    "sourceFile": "lib/src/models/recipes.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 3,
+            "patches": [
+                {
+                    "date": 1688387307473,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1688387337578,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,4 @@\n-List<String> recipes = [];\n+List<String> recipes = [\n+  'Breakfast',\n+  'Lunch', \n+];\n"
+                },
+                {
+                    "date": 1688387344483,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,3 @@\n List<String> recipes = [\n-  'Breakfast',\n-  'Lunch',\n+  'Breakfast', 'Lunch',\n ];\n"
+                },
+                {
+                    "date": 1688387389689,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,8 @@\n List<String> recipes = [\n   'Breakfast',\n   'Lunch',\n+  'Dinner',\n+  \"Main\",\n+  'Snack',\n+  'Starter', 'Dessert', 'Brunch'\n ];\n"
+                }
+            ],
+            "date": 1688387307473,
+            "name": "Commit-0",
+            "content": "import 'package:flutter/material.dart';\n\nList<String> recipes = [];\n"
+        }
+    ]
+}

@@ -1,0 +1,30 @@
+{
+    "sourceFile": "lib/src/models/meal.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 3,
+            "patches": [
+                {
+                    "date": 1688566450115,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1688566722784,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,12 +1,20 @@\n+// ignore_for_file: public_member_api_docs, sort_constructors_first\n class Meal {\n   final String name;\n+  final String imageUrl;\n   final String chef;\n+  final String chefImageUrl;\n   final String duration;\n   Meal({\n     required this.name,\n+    required this.imageUrl,\n     required this.chef,\n+    required this.chefImageUrl,\n     required this.duration,\n   });\n }\n \n-final List<Meal> meals = [];\n+final List<Meal> meals = [\n+  Meal(name: 'Jollof', imageUrl: '', chef: 'Mike Dean', chefImageUrl: '', duration: '45 Minutes'),\n+  Meal(name: 'Fried rice', imageUrl: '', chef: 'Lillian Brown', chefImageUrl: '', duration: '1 hour')\n+];\n"
+                },
+                {
+                    "date": 1688566777627,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,6 +25,25 @@\n       name: 'Fried rice',\n       imageUrl: '',\n       chef: 'Lillian Brown',\n       chefImageUrl: '',\n-      duration: '1 hour')\n+      duration: '1 hour'),\n+       Meal(\n+      name: 'Pizza',\n+      imageUrl: '',\n+      chef: 'Gianna Smith',\n+      chefImageUrl: '',\n+      duration: '45 minutes'),\n+       Meal(\n+      name: 'Pizza',\n+      imageUrl: '',\n+      chef: 'Gianna Smith',\n+      chefImageUrl: '',\n+      duration: '45 minutes'),\n+       Meal(\n+      name: 'Pizza',\n+      imageUrl: '',\n+      chef: 'Gianna Smith',\n+      chefImageUrl: '',\n+      duration: '45 minutes'),\n+\n ];\n"
+                },
+                {
+                    "date": 1688567666041,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,30 +19,49 @@\n       name: 'Jollof',\n       imageUrl: '',\n       chef: 'Mike Dean',\n       chefImageUrl: '',\n-      duration: '45 Minutes'),\n+      duration: '45 Min'),\n   Meal(\n       name: 'Fried rice',\n       imageUrl: '',\n       chef: 'Lillian Brown',\n       chefImageUrl: '',\n-      duration: '1 hour'),\n+      duration: '1 hr'),\n   Meal(\n       name: 'Pizza',\n       imageUrl: '',\n       chef: 'Gianna Smith',\n       chefImageUrl: '',\n-      duration: '45 minutes'),\n+      duration: '45 min'),\n   Meal(\n-      name: 'Pizza',\n+      name: 'Sushi',\n       imageUrl: '',\n-      chef: 'Gianna Smith',\n+      chef: 'Diane Arthur',\n       chefImageUrl: '',\n-      duration: '45 minutes'),\n+      duration: '1 hr, 20min'),\n   Meal(\n       name: 'Pizza',\n       imageUrl: '',\n       chef: 'Gianna Smith',\n       chefImageUrl: '',\n-      duration: '45 minutes'),\n+      duration: '1 hr'),\n+      Meal(\n+      name: 'Waakye',\n+      imageUrl: '',\n+      chef: 'Eva Williams',\n+      chefImageUrl: '',\n+      duration: '1 hr, 40 min'),\n+      Meal(\n+      name: 'Steak',\n+      imageUrl: '',\n+      chef: 'Michael Bronny',\n+      chefImageUrl: '',\n+      duration: '1 hr'),\n+      Meal(\n+      name: 'Spaghetti',\n+      imageUrl: '',\n+      chef: 'Robert William',\n+      chefImageUrl: '',\n+      duration: '20 min'),\n+\n ];\n"
+                }
+            ],
+            "date": 1688566450115,
+            "name": "Commit-0",
+            "content": "class Meal {\n  final String name;\n  final String chef;\n  final String duration;\n  Meal({\n    required this.name,\n    required this.chef,\n    required this.duration,\n  });\n}\n\nfinal List<Meal> meals = [];\n"
+        }
+    ]
+}

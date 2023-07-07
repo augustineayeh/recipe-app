@@ -1,0 +1,30 @@
+{
+    "sourceFile": "lib/main.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 3,
+            "patches": [
+                {
+                    "date": 1688383226399,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1688387115616,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,6 @@\n import 'package:cook_that_thing/src/routes/home_page.dart';\n+import 'package:cook_that_thing/src/routes/intro.dart';\n import 'package:flutter/material.dart';\n \n void main() {\n   runApp(const MyApp());\n@@ -15,8 +16,9 @@\n       theme: ThemeData(\n         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),\n         useMaterial3: true,\n       ),\n-      home: const HomePage(),\n+      home: const IntroScreen\n+      (),\n     );\n   }\n }\n"
+                },
+                {
+                    "date": 1688387131180,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-import 'package:cook_that_thing/src/routes/intro.dart';\n+import 'package:cook_that_thing/src/routes/home_page.dart';\n import 'package:flutter/material.dart';\n \n void main() {\n   runApp(const MyApp());\n@@ -15,8 +15,8 @@\n       theme: ThemeData(\n         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),\n         useMaterial3: true,\n       ),\n-      home: const IntroScreen(),\n+      home: const HomePage(),\n     );\n   }\n }\n"
+                },
+                {
+                    "date": 1688395314592,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,14 @@\n import 'package:cook_that_thing/src/routes/home_page.dart';\n import 'package:flutter/material.dart';\n+import 'package:firebase_core/firebase_core.dart';\n \n-void main() {\n+\n+void main() async {\n+\n+   WidgetsFlutterBinding.ensureInitialized();\n+  await Firebase.initializeApp();\n+\n   runApp(const MyApp());\n }\n \n class MyApp extends StatelessWidget {\n"
+                }
+            ],
+            "date": 1688383226399,
+            "name": "Commit-0",
+            "content": "import 'package:cook_that_thing/src/routes/home_page.dart';\nimport 'package:flutter/material.dart';\n\nvoid main() {\n  runApp(const MyApp());\n}\n\nclass MyApp extends StatelessWidget {\n  const MyApp({super.key});\n\n  @override\n  Widget build(BuildContext context) {\n    return MaterialApp(\n      title: 'Flutter Demo',\n      theme: ThemeData(\n        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),\n        useMaterial3: true,\n      ),\n      home: const HomePage(),\n    );\n  }\n}\n"
+        }
+    ]
+}

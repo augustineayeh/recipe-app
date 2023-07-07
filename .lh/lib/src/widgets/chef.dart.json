@@ -1,0 +1,26 @@
+{
+    "sourceFile": "lib/src/widgets/chef.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1688558021937,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1688558160753,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,17 +1,30 @@\n+// ignore_for_file: public_member_api_docs, sort_constructors_first\n import 'package:flutter/material.dart';\n \n class ChefWidget extends StatefulWidget {\n-  const ChefWidget({super.key});\n+  final String imageUrl;\n+  \n+  const ChefWidget({\n+    Key? key,\n+    required this.imageUrl,\n+  }) : super(key: key);\n \n   @override\n   State<ChefWidget> createState() => _ChefWidgetState();\n }\n \n class _ChefWidgetState extends State<ChefWidget> {\n   @override\n   Widget build(BuildContext context) {\n-    return const Column(\n-      children: [ListTile(), Divider()],\n+    return  Column(\n+      children: [\n+        ListTile(\n+          leading: CircleAvatar(\n+            backgroundImage: AssetImage(widget.imageUrl), radius: 10,\n+          ),\n+        ),\n+        Divider()\n+      ],\n     );\n   }\n }\n"
+                },
+                {
+                    "date": 1688558482084,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,13 +1,15 @@\n // ignore_for_file: public_member_api_docs, sort_constructors_first\n+import 'package:cook_that_thing/src/models/models.dart';\n import 'package:flutter/material.dart';\n \n class ChefWidget extends StatefulWidget {\n-  final String imageUrl;\n-\n+  final Chef chef;\n+  final int index;\n   const ChefWidget({\n     Key? key,\n-    required this.imageUrl,\n+    required this.chef,\n+    required this.index,\n   }) : super(key: key);\n \n   @override\n   State<ChefWidget> createState() => _ChefWidgetState();\n@@ -19,12 +21,15 @@\n     return Column(\n       children: [\n         ListTile(\n           leading: CircleAvatar(\n-            backgroundImage: AssetImage(widget.imageUrl),\n+            backgroundImage: AssetImage(widget.chef.imageUrl),\n             radius: 10,\n           ),\n+          title: Text(widget.chef.name),\n+          subtitle: Text('${widget.chef.numberOfRecipes} recipes'),\n         ),\n+\n         const Divider()\n       ],\n     );\n   }\n"
+                }
+            ],
+            "date": 1688558021937,
+            "name": "Commit-0",
+            "content": "import 'package:flutter/cupertino.dart';\nimport 'package:flutter/foundation.dart';\nimport 'package:flutter/material.dart';\n\nclass ChefWidget extends StatefulWidget {\n  const ChefWidget({super.key});\n\n  @override\n  State<ChefWidget> createState() => _ChefWidgetState();\n}\n\nclass _ChefWidgetState extends State<ChefWidget> {\n  @override\n  Widget build(BuildContext context) {\n    return const Column(children: [ListTile(), Divider()],);\n  }\n}"
+        }
+    ]
+}

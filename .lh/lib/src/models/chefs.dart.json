@@ -1,0 +1,22 @@
+{
+    "sourceFile": "lib/src/models/chefs.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1688387820829,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1688387850131,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,4 +4,6 @@\n   final int numberOfRecipes;\n \n   Chef(this.name, this.profilePicUrl, this.numberOfRecipes);\n }\n+\n+List<Chef> chefs = [];\n"
+                }
+            ],
+            "date": 1688387820829,
+            "name": "Commit-0",
+            "content": "class Chef {\n  final String name;\n  final String profilePicUrl;\n  final int numberOfRecipes;\n\n  Chef(this.name, this.profilePicUrl, this.numberOfRecipes);\n}\n"
+        }
+    ]
+}

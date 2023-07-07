@@ -1,0 +1,30 @@
+{
+    "sourceFile": "lib/src/routes/select_chefs.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 3,
+            "patches": [
+                {
+                    "date": 1688401461592,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1688558889434,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,6 @@\n+import 'package:cook_that_thing/src/models/models.dart';\n+import 'package:cook_that_thing/src/widgets/chef.dart';\n import 'package:flutter/material.dart';\n \n class SelectChefsScreen extends StatefulWidget {\n   const SelectChefsScreen({super.key});\n@@ -9,7 +11,14 @@\n \n class _SelectChefsScreenState extends State<SelectChefsScreen> {\n   @override\n   Widget build(BuildContext context) {\n-    return const Placeholder();\n+    return SizedBox(height: 400,\n+      child: ListView.builder(\n+          itemCount: chefs.length,\n+          itemBuilder: (context, index) {\n+            final chef = chefs[index];\n+            return ChefWidget(chef: chef, index: index);\n+          }),\n+    );\n   }\n }\n"
+                },
+                {
+                    "date": 1688559171671,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n class _SelectChefsScreenState extends State<SelectChefsScreen> {\n   @override\n   Widget build(BuildContext context) {\n     return SizedBox(\n-      height: 400,\n+      height: 200,\n       child: ListView.builder(\n           itemCount: chefs.length,\n           itemBuilder: (context, index) {\n             final chef = chefs[index];\n"
+                },
+                {
+                    "date": 1688559186947,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n class _SelectChefsScreenState extends State<SelectChefsScreen> {\n   @override\n   Widget build(BuildContext context) {\n     return SizedBox(\n-      height: 200,\n+      height: 500,\n       child: ListView.builder(\n           itemCount: chefs.length,\n           itemBuilder: (context, index) {\n             final chef = chefs[index];\n"
+                }
+            ],
+            "date": 1688401461591,
+            "name": "Commit-0",
+            "content": "import 'package:flutter/material.dart';\n\nclass SelectChefsScreen extends StatefulWidget {\n  const SelectChefsScreen({super.key});\n\n  @override\n  State<SelectChefsScreen> createState() => _SelectChefsScreenState();\n}\n\nclass _SelectChefsScreenState extends State<SelectChefsScreen> {\n  @override\n  Widget build(BuildContext context) {\n    return const Placeholder();\n  }\n}"
+        }
+    ]
+}

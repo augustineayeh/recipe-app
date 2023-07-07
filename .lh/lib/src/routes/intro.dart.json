@@ -1,0 +1,30 @@
+{
+    "sourceFile": "lib/src/routes/intro.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 3,
+            "patches": [
+                {
+                    "date": 1688386169823,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1688386221776,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,7 +9,9 @@\n \n class _IntroScreenState extends State<IntroScreen> {\n   @override\n   Widget build(BuildContext context) {\n-    return const Scaffold();\n+    return const Scaffold(\n+      body: Column(children: [PageView()],),\n+    );\n   }\n }\n"
+                },
+                {
+                    "date": 1688386233987,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n   @override\n   Widget build(BuildContext context) {\n     return Scaffold(\n       body: Column(\n-        children: [PageView()],\n+        children: [PageView(children: [],)],\n       ),\n     );\n   }\n }\n"
+                },
+                {
+                    "date": 1688386275366,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,11 @@\n     return Scaffold(\n       body: Column(\n         children: [\n           PageView(\n-            children: const [],\n+            children:  [\n+              Column(children: [Image.asset('')],)\n+            ],\n           )\n         ],\n       ),\n     );\n"
+                }
+            ],
+            "date": 1688386169823,
+            "name": "Commit-0",
+            "content": "import 'package:flutter/material.dart';\n\nclass IntroScreen extends StatefulWidget {\n  const IntroScreen({super.key});\n\n  @override\n  State<IntroScreen> createState() => _IntroScreenState();\n}\n\nclass _IntroScreenState extends State<IntroScreen> {\n  @override\n  Widget build(BuildContext context) {\n    return const Scaffold();\n  }\n}"
+        }
+    ]
+}

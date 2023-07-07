@@ -1,0 +1,18 @@
+{
+    "sourceFile": "lib/src/models/models.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1688663679308,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1688663679308,
+            "name": "Commit-0",
+            "content": "export 'package:cook_that_thing/src/models/chef.dart';\nexport 'package:cook_that_thing/src/models/data.dart';\nexport 'package:cook_that_thing/src/models/meal.dart';\n"
+        }
+    ]
+}

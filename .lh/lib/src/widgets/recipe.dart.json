@@ -1,0 +1,26 @@
+{
+    "sourceFile": "lib/src/widgets/recipe.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1688564342505,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1688564364655,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n           isSelected = !isSelected;\n         });\n       },\n       child: Container(\n-        margin: const EdgeInsets.symmetric(horizontal: 10),\n+       \n         decoration: BoxDecoration(\n             color: isSelected ? AppColors.orange : Colors.white,\n             border: Border.all(color: isSelected ? Colors.white : Colors.black),\n             borderRadius: BorderRadius.circular(20)),\n"
+                },
+                {
+                    "date": 1688564595828,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n         setState(() {\n           isSelected = !isSelected;\n         });\n       },\n-      child: Container(\n+      child: Container(padding: EdgeInsets.symmetric(horizontal: 5),\n         decoration: BoxDecoration(\n             color: isSelected ? AppColors.orange : Colors.white,\n             border: Border.all(color: isSelected ? Colors.white : Colors.black),\n             borderRadius: BorderRadius.circular(20)),\n"
+                }
+            ],
+            "date": 1688564342505,
+            "name": "Commit-0",
+            "content": "// ignore_for_file: public_member_api_docs, sort_constructors_first\nimport 'package:cook_that_thing/src/utils/app_colors.dart';\nimport 'package:flutter/material.dart';\n\nclass RecipeWidget extends StatefulWidget {\n  final String recipe;\n  final int index;\n  const RecipeWidget({\n    Key? key,\n    required this.recipe,\n    required this.index,\n  }) : super(key: key);\n\n  @override\n  State<RecipeWidget> createState() => _RecipeWidgetState();\n}\n\nclass _RecipeWidgetState extends State<RecipeWidget> {\n  bool isSelected = false;\n\n  @override\n  Widget build(BuildContext context) {\n    return InkWell(\n      onTap: () {\n        setState(() {\n          isSelected = !isSelected;\n        });\n      },\n      child: Container(margin: EdgeInsets.symmetric(horizontal: 10),\n        decoration: BoxDecoration(\n            color: isSelected ? AppColors.orange : Colors.white,\n            border: Border.all(color: isSelected ? Colors.white : Colors.black),\n            borderRadius: BorderRadius.circular(20)),\n        child: Center(\n            child: Text(\n          widget.recipe,\n          style: TextStyle(color: isSelected ? Colors.white : Colors.black),\n        )),\n      ),\n    );\n  }\n}\n"
+        }
+    ]
+}

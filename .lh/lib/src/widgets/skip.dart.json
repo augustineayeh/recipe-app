@@ -1,0 +1,26 @@
+{
+    "sourceFile": "lib/src/widgets/skip.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1688557538207,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1688557572905,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,15 +5,19 @@\n   const SkipWidget({super.key});\n \n   @override\n   Widget build(BuildContext context) {\n-    return Container(\n-        padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),\n-        margin: const EdgeInsets.symmetric(horizontal: 20),\n-        decoration: BoxDecoration(\n-            color: AppColors.deepGrey, borderRadius: BorderRadius.circular(10)),\n-        child: const Text(\n-          'Skip',\n-          style: TextStyle(color: Colors.white),\n-        ));\n+    return InkWell(onTap: (){\n+      \n+    },\n+      child: Container(\n+          padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),\n+          margin: const EdgeInsets.symmetric(horizontal: 20),\n+          decoration: BoxDecoration(\n+              color: AppColors.deepGrey, borderRadius: BorderRadius.circular(10)),\n+          child: const Text(\n+            'Skip',\n+            style: TextStyle(color: Colors.white),\n+          )),\n+    );\n   }\n }\n"
+                },
+                {
+                    "date": 1688557669398,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,14 +1,22 @@\n-import 'package:cook_that_thing/src/utils/app_colors.dart';\n+// ignore_for_file: public_member_api_docs, sort_constructors_first\n import 'package:flutter/material.dart';\n \n+import 'package:cook_that_thing/src/utils/app_colors.dart';\n+\n class SkipWidget extends StatelessWidget {\n-  const SkipWidget({super.key});\n+  final dynamic route;\n+  const SkipWidget({\n+    Key? key,\n+    required this.route,\n+  }) : super(key: key);\n \n   @override\n   Widget build(BuildContext context) {\n     return InkWell(\n-      onTap: () {},\n+      onTap: () {\n+        Navigator.push(context, MaterialPageRoute(builder: (context) => route));\n+      },\n       child: Container(\n           padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),\n           margin: const EdgeInsets.symmetric(horizontal: 20),\n           decoration: BoxDecoration(\n"
+                }
+            ],
+            "date": 1688557538207,
+            "name": "Commit-0",
+            "content": "import 'package:cook_that_thing/src/utils/app_colors.dart';\n\n\nimport 'package:flutter/material.dart';\n\nclass SkipWidget extends StatelessWidget {\n  const SkipWidget({super.key});\n\n  @override\n  Widget build(BuildContext context) {\n    return  Container(\n                padding:\n                    const EdgeInsets.symmetric(horizontal: 10, vertical: 4),\n                margin: const EdgeInsets.symmetric(horizontal: 20),\n                decoration: BoxDecoration(\n                    color: AppColors.deepGrey,\n                    borderRadius: BorderRadius.circular(10)),\n                child: const Text(\n                  'Skip',\n                  style: TextStyle(color: Colors.white),\n                ));\n  }\n}"
+        }
+    ]
+}
