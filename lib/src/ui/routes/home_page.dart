@@ -1,6 +1,6 @@
-import 'package:cook_that_thing/src/models/models.dart';
-import 'package:cook_that_thing/src/utils/app_colors.dart';
-import 'package:cook_that_thing/src/widgets/widget.dart';
+import 'package:cook_that_thing/src/core/models/models.dart';
+import 'package:cook_that_thing/src/constants/app_colors.dart';
+import 'package:cook_that_thing/src/ui/widgets/widgets.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {

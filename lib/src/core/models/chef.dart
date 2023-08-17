@@ -14,6 +14,16 @@ class Chef {
 
 List<Chef> chefs = [
   Chef(
+      name: 'Diane Arthur',
+      imageUrl: 'assets/images/chef6.jpeg',
+      numberOfRecipes: 15,
+      rating: 4.76),
+  Chef(
+      name: 'Andre Ryan',
+      imageUrl: 'assets/images/chef14.jpeg',
+      numberOfRecipes: 17,
+      rating: 4.83),
+  Chef(
       name: 'James Brown',
       imageUrl: 'assets/images/chef1.avif',
       numberOfRecipes: 12,
@@ -38,11 +48,6 @@ List<Chef> chefs = [
       imageUrl: 'assets/images/chef5.jpeg',
       numberOfRecipes: 16,
       rating: 4.84),
-  Chef(
-      name: 'Diane Arthur',
-      imageUrl: 'assets/images/chef6.jpeg',
-      numberOfRecipes: 15,
-      rating: 4.76),
   Chef(
       name: 'Gianna Smith',
       imageUrl: 'assets/images/chef7.jpeg',
@@ -78,11 +83,6 @@ List<Chef> chefs = [
       imageUrl: 'assets/images/chef13.jpeg',
       numberOfRecipes: 14,
       rating: 4.94),
-  Chef(
-      name: 'Andre Ryan',
-      imageUrl: 'assets/images/chef14.jpeg',
-      numberOfRecipes: 17,
-      rating: 4.83),
   Chef(
       name: 'Robert William',
       imageUrl: 'assets/images/chef15.jpeg',

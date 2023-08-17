@@ -1,6 +1,6 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
-import 'package:cook_that_thing/src/models/models.dart';
-import 'package:cook_that_thing/src/routes/chef_detail.dart';
+import 'package:cook_that_thing/src/core/models/models.dart';
+import 'package:cook_that_thing/src/ui/routes/chef_detail.dart';
 import 'package:flutter/material.dart';
 
 class PopularChef extends StatelessWidget {
@@ -23,7 +23,7 @@ class PopularChef extends StatelessWidget {
                     ChefDetailsScreen(chef: chef, index: index)));
       },
       child: Padding(
-        padding: const EdgeInsets.only(right: 15),
+        padding: const EdgeInsets.only(right: 10),
         child: Column(
           children: [
             CircleAvatar(

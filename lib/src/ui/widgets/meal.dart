@@ -1,7 +1,7 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
-import 'package:cook_that_thing/src/models/models.dart';
-import 'package:cook_that_thing/src/routes/meal_detail.dart';
-import 'package:cook_that_thing/src/utils/app_colors.dart';
+import 'package:cook_that_thing/src/core/models/models.dart';
+import 'package:cook_that_thing/src/ui/routes/meal_detail.dart';
+import 'package:cook_that_thing/src/constants/app_colors.dart';
 import 'package:flutter/material.dart';
 
 class MealWidget extends StatefulWidget {

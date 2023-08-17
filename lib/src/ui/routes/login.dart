@@ -1,6 +1,6 @@
-import 'package:cook_that_thing/src/routes/routes.dart';
-import 'package:cook_that_thing/src/utils/app_colors.dart';
-import 'package:cook_that_thing/src/widgets/orange_button.dart';
+import 'package:cook_that_thing/src/ui/routes/routes.dart';
+import 'package:cook_that_thing/src/constants/app_colors.dart';
+import 'package:cook_that_thing/src/ui/widgets/widgets.dart';
 import 'package:flutter/material.dart';
 
 class LogInScreen extends StatefulWidget {

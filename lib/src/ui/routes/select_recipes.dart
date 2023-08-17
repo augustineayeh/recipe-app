@@ -1,7 +1,7 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
-import 'package:cook_that_thing/src/models/models.dart';
-import 'package:cook_that_thing/src/routes/routes.dart';
-import 'package:cook_that_thing/src/widgets/widgets.dart';
+import 'package:cook_that_thing/src/core/models/models.dart';
+import 'package:cook_that_thing/src/ui/routes/routes.dart';
+import 'package:cook_that_thing/src/ui/widgets/widgets.dart';
 import 'package:flutter/material.dart';
 
 class SelectRecipeScreen extends StatefulWidget {
